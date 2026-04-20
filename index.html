@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 02 - Noticias HTML</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #0056b3;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        article {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            margin: 40px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .category {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 40px 0;
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <span class="category">Política / Educación</span>
+        
+        <h1>Universidades: el oficialismo reflota una reforma de la ley de financiamiento tras el revés que sufrió en la Justicia</h1>
+        
+        <h2>La iniciativa, de menor impacto fiscal que la votada por el Congreso, se presentó en Diputados en febrero pasado, pero no se trató; los reproches de Santiago Caputo a Martín Menem</h2>
+
+        <hr>
+
+        <p>En simultáneo a la decisión de llevar a la <strong>Corte Suprema</strong> su reclamo para no cumplir con la ley de financiamiento universitario, el oficialismo buscará reactivar un proyecto del Gobierno para evitar que el Estado deba desembolsar <strong>$2,5 billones</strong> a las casas de altos estudios tal como ya le ordenaron dos fallos judiciales.</p>
+
+        <p>La iniciativa no es nueva: se presentó en la Cámara de Diputados durante las sesiones extraordinarias de febrero pasado, cuando los libertarios gozaban de un amplio dominio del recinto junto a sus aliados. Sin embargo, el bloque oficialista no la puso en tratamiento con el argumento de que los esfuerzos estaban focalizados, por entonces, en la aprobación de la <strong>reforma laboral</strong>, prioridad absoluta para el Gobierno.</p>
+
+        <p>Ahora, apremiado por la Justicia para que cumpla con la <strong>ley 27.795</strong> que el Congreso sancionó el año pasado −puntualmente con la actualización de los salarios docentes y los programas de becas−, el oficialismo busca reflotar la iniciativa, la cual no deroga la ley pero sí la modifica para amortiguar su impacto fiscal. Todavía no hay fecha de convocatoria a comisiones, pero será pronto, confirmaron a <strong>LA NACION</strong> fuentes en el bloque libertario.</p>
+
+        <p>Los reproches por no haber impulsado el proyecto a tiempo se amplifican en medio de la feroz interna entre <strong>Santiago Caputo</strong> y <strong>Karina Milei</strong>. El asesor presidencial, que durante el verano venía llevando adelante negociaciones discretas con algunos rectores para promover el proyecto, confiaba en que obtendría de ellos un guiño para desactivar en el Congreso el frente judicial, que ya se asomaba complicado con el fallo en primera instancia del juez Martín Cormick.</p>
+
+        <footer>
+            Fuente: La Nación - Reproducción con fines educativos.
+        </footer>
+    </article>
+</body>
+</html>
