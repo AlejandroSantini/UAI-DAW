@@ -1,0 +1,178 @@
+/* Estilos para la noticia de Infobae - Actividad 04 */
+
+/* Selector Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --infobae-orange: #ff6600;
+    --infobae-black: #000000;
+    --infobae-text: #333333;
+    --infobae-gray: #666666;
+    --infobae-bg: #ffffff;
+    --container-width: 800px;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Infobae usa serif para el cuerpo */
+    line-height: 1.6;
+    color: var(--infobae-text);
+    background-color: var(--infobae-bg);
+}
+
+/* Selector de Etiqueta */
+header {
+    background-color: var(--infobae-black);
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 4px solid var(--infobae-orange);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Selector de ID */
+#logo-placeholder {
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+#logo-placeholder span {
+    color: var(--infobae-orange);
+}
+
+main {
+    max-width: var(--container-width);
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Selector de Clase */
+.headline {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--infobae-black);
+    margin-bottom: 20px;
+}
+
+.epigraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    color: var(--infobae-gray);
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.byline {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: var(--infobae-black);
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.author {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--infobae-orange);
+}
+
+.date {
+    color: var(--infobae-gray);
+    margin-left: 10px;
+}
+
+/* Selector Descendente */
+article figure {
+    margin: 0 -20px 30px -20px; /* Imagen un poco más ancha que el texto en móviles */
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+article figcaption {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    color: var(--infobae-gray);
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Cuerpo de la noticia */
+.content p {
+    margin-bottom: 25px;
+    font-size: 19px;
+}
+
+.content strong {
+    color: var(--infobae-black);
+}
+
+/* Tags section */
+.tags-container {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.tags-container h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--infobae-gray);
+    margin-bottom: 15px;
+}
+
+.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-item {
+    background-color: #f2f2f2;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    color: var(--infobae-text);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.tag-item:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: var(--infobae-gray);
+    margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .headline {
+        font-size: 32px;
+    }
+    
+    .epigraph {
+        font-size: 18px;
+    }
+}
