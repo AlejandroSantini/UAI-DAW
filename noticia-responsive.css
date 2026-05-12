@@ -1,0 +1,184 @@
+/* Estilos Responsive para BBC Mundo - Actividad 05 */
+
+/* Reseteo y Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Requisito: Box Model */
+}
+
+:root {
+    --bbc-red: #bb1919;
+    --bbc-black: #212121;
+    --bbc-text: #4a4a4a;
+    --bbc-bg: #ffffff;
+    --max-content-width: 1000px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+    color: var(--bbc-text);
+    line-height: 1.5;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--bbc-red);
+    color: white;
+    padding: 10px 0;
+    border-bottom: 4px solid rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Layout Principal */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile default */
+    gap: 20px;
+    max-width: var(--max-content-width);
+    margin: 20px auto;
+    background-color: var(--bbc-bg);
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+/* Article Styling */
+.news-article {
+    padding: 10px;
+}
+
+.category {
+    color: var(--bbc-red);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--bbc-black);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.metadata {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Sidebar (Hidden in Mobile) */
+.sidebar {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid var(--bbc-red);
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--bbc-red);
+}
+
+.related-list {
+    list-style: none;
+}
+
+.related-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.related-item a {
+    text-decoration: none;
+    color: var(--bbc-black);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- MEDIA QUERIES (Requisito) --- */
+
+/* Tablet: 600px - 1024px */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: #eee;
+    }
+
+    .main-layout {
+        padding: 40px;
+        margin: 40px auto;
+        border-radius: 4px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop: > 1024px */
+@media screen and (min-width: 1024px) {
+    .main-layout {
+        grid-template-columns: 2fr 1fr; /* Layout de dos columnas */
+        gap: 40px;
+    }
+
+    .sidebar {
+        display: block; /* Aparece el sidebar en escritorio */
+    }
+
+    .news-article {
+        border-right: 1px solid #eee;
+        padding-right: 40px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--bbc-black);
+    color: #999;
+    font-size: 12px;
+    margin-top: 50px;
+}

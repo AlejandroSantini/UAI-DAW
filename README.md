@@ -4,6 +4,12 @@ Este repositorio contiene las actividades prácticas desarrolladas para la asign
 
 ## Actividades Realizadas
 
+### Actividad 05: Diseño Responsive y Media Queries
+- **Archivo:** [noticia-responsive.html](noticia-responsive.html)
+- **CSS:** [noticia-responsive.css](noticia-responsive.css)
+- **Noticia Original (Referencia):** [BBC Mundo - Crisis política en Reino Unido](https://www.bbc.com/mundo/topics/ckdxnx9rx3zt)
+- **Descripción:** Implementación de un diseño adaptable (Mobile, Tablet, Desktop) utilizando Media Queries y propiedades del Box Model. El diseño cambia de una sola columna en móviles a un sistema de rejilla con barra lateral en escritorio.
+
 ### Actividad 04: CSS y Estructura Visual
 - **Archivo:** [noticia-infobae.html](noticia-infobae.html)
 - **CSS:** [noticia-infobae.css](noticia-infobae.css)
