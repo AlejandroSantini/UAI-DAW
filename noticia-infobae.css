@@ -1,6 +1,5 @@
 /* Estilos para la noticia de Infobae - Actividad 04 */
 
-/* Selector Universal */
 * {
     margin: 0;
     padding: 0;
@@ -17,14 +16,14 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Infobae usa serif para el cuerpo */
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     color: var(--infobae-text);
     background-color: var(--infobae-bg);
 }
 
-/* Selector de Etiqueta */
-header {
+/* Selector de Etiqueta (Específico para el encabezado principal) */
+body > header {
     background-color: var(--infobae-black);
     padding: 10px 0;
     text-align: center;
@@ -34,7 +33,15 @@ header {
     z-index: 1000;
 }
 
-/* Selector de ID */
+.article-header {
+    background-color: transparent;
+    padding: 0;
+    text-align: left;
+    border-bottom: none;
+    position: static;
+    margin-bottom: 30px;
+}
+
 #logo-placeholder {
     color: white;
     font-family: 'Arial Black', sans-serif;
@@ -90,9 +97,8 @@ main {
     margin-left: 10px;
 }
 
-/* Selector Descendente */
 article figure {
-    margin: 0 -20px 30px -20px; /* Imagen un poco más ancha que el texto en móviles */
+    margin: 0 -20px 30px -20px; 
 }
 
 article img {
@@ -119,7 +125,6 @@ article figcaption {
     color: var(--infobae-black);
 }
 
-/* Tags section */
 .tags-container {
     margin-top: 50px;
     padding-top: 20px;
@@ -166,7 +171,6 @@ footer {
     margin-top: 60px;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .headline {
         font-size: 32px;
